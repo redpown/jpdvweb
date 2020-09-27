@@ -1,0 +1,13 @@
+       if FileExists(WebApplication.ApplicationPath+'\wwwroot\config\conexao.cds') then
+       begin
+         if (UserSession.Usuario  = '') and (AForm.ClassName <> 'TIWLogin') then
+         begin
+         VNewForm := TIWLogin.Create(nil);
+         AForm.Release;
+         end;
+       end
+       else
+       begin
+         VNewForm := TIWTelaSistemaConfig.Create(nil);
+         AForm.Release;
+       end;

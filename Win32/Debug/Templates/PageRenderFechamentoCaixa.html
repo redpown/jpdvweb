@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<!-- ---------------------------------------------------------------------------------------------------RenderHtml.Head----------------------------------------------------------------------------------------------------------------- -->
+{%RenderHtmlHead%}
+</head>
+<body>
+{%RenderHtmlHeader%}
+<!-- ---------------------------------------------------------------------------------------------------body----------------------------------------------------------------------------------------------------------------- -->
+  <div class="col-12 grid-margin">
+                <div class="card">
+                  <div class="card-body">
+                    <h4 class="card-title">Vendas</h4>
+                    <form class="form-sample">
+                      <p class="card-description">Total de Vendas</p>
+					    <div class="row">
+                        <div class="col-md-12">
+                          <div class="form-group row">
+                            <label class="col-sm-3 col-form-label">Pesquisar por periodo:</label>
+                            <div class="input-group col-sm-3">
+                              <input type="text"  class="form-control data col-sm-6" placeholder = "Data Inicial"/>
+							    <div class="input-group-append form-group ">
+								<span class="input-group-text">
+								  <i class="fa fa-calendar"></i>
+								</span>
+							  </div>
+                            </div>
+							<div class="input-group col-sm-3">
+                              <input type="text"  class="form-control data col-sm-6" placeholder = "Data Final" />
+		                       <div class="input-group-append form-group ">
+								<span class="input-group-text">
+								  <i class="fa fa-calendar"></i>
+								</span>
+							  </div>
+                            </div>
+						  </div>
+						</div>
+					
+						<div class="col-sm-5 padding-right-12px">
+								<div class="form-group row col-md-12 padding-right-12px">							
+									<button class="btn btn-secondary submit-btn btn-block col-sm-6"><span class="col-sm-6 col-form-label">Pesquisar</span> <span class="col-sm-6 col-form-label"><i class="fa fa-search" aria-hidden="true"></i></span></button>
+								</div>
+							</div>
+					
+			<div class="col-md-12">					
+				<ul class="nav nav-tabs  " id="myTab" role="tablist">
+				  <li class="nav-item">
+					<a class="nav-link active" id="sintetico-tab" data-toggle="tab" href="#sintetico" role="tab" aria-controls="sintetico" aria-selected="true">Sintetico</a>
+				  </li>
+				  <li class="nav-item">
+					<a class="nav-link" id="analitico-tab" data-toggle="tab" href="#analitico" role="tab" aria-controls="analitico" aria-selected="false">analitica</a>
+				  </li>
+				</ul>
+			</div>	
+				
+<div class="col-md-12 tab-content" id="myTabContent">
+  <div class="tab-pane fade show active  col-md-12" id="sintetico" role="tabpanel" aria-labelledby="sintetico-tab">
+	 <div class=" row">
+                        <div class="table-responsive">
+							 <table class="table table-bordered table-striped table-hover table-sm">
+							  <thead class="thead-dark">
+								<tr>
+								  <th scope="col">Descrição</th>
+								  <th scope="col">Quantidade</th>
+								  <th scope="col">Suprimento</th>
+								  <th scope="col">Sangria</th>
+								  <th scope="col">Venda</th>
+								  <th scope="col">Total</th>
+								  <th scope="col">Troco</th>
+								  <th scope="col">Digitado</th>
+								  <th scope="col">Diferença</th>
+								</tr>
+							  </thead>
+							  <tbody>
+								<tr>
+                                  <td>Mark</td>
+								  <td>Otto</td>
+								  <td>@mdo</td>
+								  <td>Mark</td>
+								  <td>Otto</td>
+								  <td>@mdo</td>
+								  <td>Mark</td>
+								  <td>Otto</td>
+								  <td>@mdo</td>
+								</tr>
+								<tr>
+                                  <td>Mark</td>
+								  <td>Otto</td>
+								  <td>@mdo</td>
+								  <td>Mark</td>
+								  <td>Otto</td>
+								  <td>@mdo</td>
+								  <td>Mark</td>
+								  <td>Otto</td>
+								  <td>@mdo</td>
+								</tr>
+								<tr>
+                                  <td>Mark</td>
+								  <td>Otto</td>
+								  <td>@mdo</td>
+								  <td>Mark</td>
+								  <td>Otto</td>
+								  <td>@mdo</td>
+								  <td>Mark</td>
+								  <td>Otto</td>
+								  <td>@mdo</td>
+								</tr>
+							  </tbody>
+							</table>
+                        </div>
+                      </div>
+  </div>
+  <div class="tab-pane fade col-md-12" id="analitico" role="tabpanel" aria-labelledby="analitico-tab">
+		<div class="row">
+                        <div class="table-responsive">
+							 <table class="table table-bordered table-striped table-hover table-sm">
+							  <thead class="thead-dark">
+								<tr>
+								  <th scope="col">Data</th>
+								  <th scope="col">Hora</th>
+								  <th scope="col">Descricao</th>
+								  <th scope="col">Valor</th>
+								  <th scope="col">credito</th>
+								  <th scope="col">Debito</th>
+								  <th scope="col">Troco</th>
+								  <th scope="col">Tipo</th>
+							
+								</tr>
+							  </thead>
+							  <tbody>
+								<tr>
+                                  <td>Mark</td>
+								  <td>Otto</td>
+								  <td>@mdo</td>
+								  <td>Mark</td>
+								  <td>Otto</td>
+								  <td>@mdo</td>
+								  <td>Mark</td>
+								  <td>Otto</td>
+
+								</tr>
+								<tr>
+                                  <td>Mark</td>
+								  <td>Otto</td>
+								  <td>@mdo</td>
+								  <td>Mark</td>
+								  <td>Otto</td>
+								  <td>@mdo</td>
+								  <td>Mark</td>
+								  <td>Otto</td>
+
+								</tr>
+								<tr>
+                                  <td>Mark</td>
+								  <td>Otto</td>
+								  <td>@mdo</td>
+								  <td>Mark</td>
+								  <td>Otto</td>
+								  <td>@mdo</td>
+								  <td>Mark</td>
+								  <td>Otto</td>
+
+								</tr>
+							  </tbody>
+							</table>
+                        </div>
+                      </div>
+				  </div>
+				</div>
+			</div>
+		</form>
+	  </div>
+	</div>
+</div>
+<!-- ---------------------------------------------------------------------------------------------------RenderHtml.Footer----------------------------------------------------------------------------------------------------------------- -->
+{%RenderHtmlFooter%}					   
+ </body>
+</html>

@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<!-- ---------------------------------------------------------------------------------------------------RenderHtml.Head----------------------------------------------------------------------------------------------------------------- -->
+{%RenderHtmlHead%}
+</head>
+<body>
+{%RenderHtmlHeader%}
+<!-- ---------------------------------------------------------------------------------------------------body----------------------------------------------------------------------------------------------------------------- -->
+
+     <div class="col-12 grid-margin">
+                <div class="card">
+                  <div class="card-body">
+                    <h4 class="card-title">Cadastro de Clientes</h4>
+                    <form class="form-sample">
+                      <p class="card-description">Informações Pessoais</p>
+					    <div class="row">
+							<div class="col-md-4">
+							  <div class="form-group row">
+								<label class="col-sm-6 col-form-label">Código de Clientes:</label>
+								<div class="col-sm-4">
+								  <input type="text" class="form-control" />
+								</div>
+							  </div>
+							</div>
+							<div class="col-md-4">
+							  <div class="form-group row">
+								<label class="col-sm-6 col-form-label">Nome de Clientes:</label>
+								<div class="col-sm-4">
+								  <input type="text" class="form-control" />
+								</div>
+							  </div>
+							</div>
+							<div class="col-sm-4">
+								<div class="form-group row justify-content-center">							
+									<button class="btn btn-secondary submit-btn btn-block col-sm-6"><span class="col-sm-6 col-form-label">Pesquisar</span> <span class="col-sm-6 col-form-label"><i class="fa fa-search" aria-hidden="true"></i></span></button>
+								</div>
+							</div>
+						</div>
+					   <div class="row">
+                        <div class="col-md-4">
+                           <div class="form-group row">
+                            <label class="col-sm-6 col-form-label">Tipo de Clientes:</label>
+                            <div class="col-sm-6">
+                              <select class="form-control col-sm-7">
+                                <option>Física</option>
+                                <option>Júridica</option>
+                              </select>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-md-4">
+                          <div class="form-group row">
+                            <label class="col-sm-12 col-form-label">Data de Cadastro:</label>
+                          </div>
+                        </div>
+						<div class="col-md-4">
+                          <div class="form-group row">
+                            <label class="col-sm-12 col-form-label">Data de Alteração de Cadastro:</label>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-md-12">
+                          <div class="form-group row">
+                            <label class="col-sm-2 col-form-label">Nome:</label>
+                            <div class="col-sm-10">
+                              <input type="text" class="form-control" />
+                            </div>
+                          </div>
+                        </div>
+						</div>
+						<div class="row">
+                        <div class="col-md-12">
+                          <div class="form-group row">
+                            <label class="col-sm-2 col-form-label">Apelido:</label>
+                            <div class="col-sm-10">
+                              <input type="text" class="form-control" />
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+					  <div class="row">
+                        <div class="col-md-3">
+                          <div class="form-group row">
+                            <label class="col-sm-3 col-form-label">CPF:</label>
+                            <div class="col-sm-9">
+                              <input type="text" class="form-control" />
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-md-3">
+                          <div class="form-group row">
+                            <label class="col-sm-3 col-form-label">RG:</label>
+                            <div class="col-sm-9">
+                              <input type="text" class="form-control" />
+                            </div>
+                          </div>
+                        </div>
+						<div class="col-md-3">
+                          <div class="form-group row">
+                            <label class="col-sm-3 col-form-label">IM:</label>
+                            <div class="col-sm-9">
+                              <input type="text" class="form-control" />
+                            </div>
+                          </div>
+                        </div>
+						 <div class="col-md-3">
+                          <div class="form-group row">
+                            <label class="col-sm-6 col-form-label">Nascimento:</label>
+                            <div class="col-sm-6">
+                              <input type="text" class="form-control" />
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+					  <div class="row">
+                        <div class="col-md-8">
+                          <div class="form-group row">
+                            <label class="col-sm-3 col-form-label">Endereço:</label>
+                            <div class="col-sm-9">
+                              <input type="text" class="form-control" />
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-md-4">
+                          <div class="form-group row">
+                            <label class="col-sm-3 col-form-label">Número:</label>
+                            <div class="col-sm-9">
+                              <input type="text" class="form-control" />
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+					  <div class="row">
+                        <div class="col-md-7">
+                          <div class="form-group row">
+                            <label class="col-sm-3 col-form-label">Complemento:</label>
+                            <div class="col-sm-9">
+                              <input type="text" class="form-control" />
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-md-5">
+                          <div class="form-group row">
+                            <label class="col-sm-3 col-form-label">Bairro:</label>
+                            <div class="col-sm-9">
+                              <input type="text" class="form-control" />
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+					  <div class="row">
+                        <div class="col-md-4">
+                          <div class="form-group row">
+                            <label class="col-sm-3 col-form-label">Codigo:</label>
+                            <div class="col-sm-9">
+                              <input type="text" class="form-control" />
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-md-5">
+                          <div class="form-group row">
+                            <label class="col-sm-3 col-form-label">Município:</label>
+                            <div class="col-sm-9">
+                              <input type="text" class="form-control" />
+                            </div>
+                          </div>
+                        </div>
+						 <div class="col-md-3">
+                          <div class="form-group row">
+                            <label class="col-sm-8 col-form-label">UF:</label>
+                            <div class="col-sm-4">
+                              <select class="form-control">
+                                <option>SP</option>
+                                <option>RO</option>
+                                <option>RJ</option>
+                                <option>BH</option>
+                              </select>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+					  <div class="row">
+                        <div class="col-md-3">
+                          <div class="form-group row">
+                            <label class="col-sm-4 col-form-label">Cep:</label>
+                            <div class="col-sm-8">
+                              <input type="text" class="form-control" />
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-md-3">
+                          <div class="form-group row">
+                            <label class="col-sm-5 col-form-label">Telefone:</label>
+                            <div class="col-sm-7">
+                              <input type="text" class="form-control" />
+                            </div>
+                          </div>
+                        </div>
+						<div class="col-md-3">
+                          <div class="form-group row">
+                            <label class="col-sm-5 col-form-label">Celular:</label>
+                            <div class="col-sm-7">
+                              <input type="text" class="form-control" />
+                            </div>
+                          </div>
+                        </div>
+						<div class="col-md-3">
+                          <div class="form-group row">
+                            <label class="col-sm-5 col-form-label">Fax:</label>
+                            <div class="col-sm-7">
+                              <input type="text" class="form-control" />
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+					  <div class="row">
+                        <div class="col-md-12">
+                          <div class="form-group row">
+                            <label class="col-sm-2 col-form-label">E-mail:</label>
+                            <div class="col-sm-10">
+                              <input type="text" class="form-control" />
+                            </div>
+                          </div>
+                        </div>
+						<div class="col-md-12">
+                          <div class="form-group row">
+                            <label class="col-sm-2 col-form-label">Site:</label>
+                            <div class="col-sm-10">
+                              <input type="text" class="form-control" />
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+					   <div class="row">
+                        <div class="col-md-3">
+                          <div class="form-group row">
+                            <label class="col-sm-8 col-form-label">Cód.Integração:</label>
+                            <div class="col-sm-4">
+                              <input type="text" class="form-control" />
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-md-3">
+                          <div class="form-group row">
+                            <label class="col-sm-6 col-form-label">CNAE:</label>
+                            <div class="col-sm-6">
+                              <input type="text" class="form-control" />
+                            </div>
+                          </div>
+                        </div>
+							<div class="col-md-3">
+							  <div class="form-group row">
+								<label class="col-sm-6 col-form-label">Isento:</label>
+								<div class="col-sm-6">
+								  <div class="form-check form-check-flat">
+								  <label class="form-check-label">
+									<input type="checkbox" class="form-check-input"></label>
+								</div>
+								</div>
+							  </div>
+							</div>
+                       </div>
+					   </form>
+						<div class="row">
+							<div class="col-md-3">
+								<div class="form-group">
+									<button class="btn btn-success submit-btn btn-block">Novo</button>
+								</div>	
+							</div>	
+							<div class="col-md-3">
+								<div class="form-group">
+									<button class="btn btn-warning submit-btn btn-block">Editar</button>
+								</div>
+							</div>								
+							<div class="col-md-3">
+								<div class="form-group">
+									<button class="btn btn-danger submit-btn btn-block">Excluir</button>
+								</div>
+							</div>								
+							<div class="col-md-3">
+								<div class="form-group">	
+									<button class="btn btn-secondary submit-btn btn-block">Cancelar</button>
+								</div>
+							</div>								
+						</div>	
+					</div>
+				
+			  </div>
+			</div>
+<!-- ---------------------------------------------------------------------------------------------------RenderHtml.Footer----------------------------------------------------------------------------------------------------------------- -->
+{%RenderHtmlFooter%}					   
+ </body>
+</html>

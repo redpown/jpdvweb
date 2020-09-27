@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<!-- ---------------------------------------------------------------------------------------------------RenderHtml.Head----------------------------------------------------------------------------------------------------------------- -->
+{%RenderHtmlHead%}
+</head>
+<body>
+{%RenderHtmlHeader%}
+<!-- ---------------------------------------------------------------------------------------------------body----------------------------------------------------------------------------------------------------------------- -->
+
+      <div class="col-12 grid-margin">
+                <div class="card">
+                  <div class="card-body">
+                    <h4 class="card-title">Cadastro de Produtos</h4>
+                    <form class="form-sample">
+                      <p class="card-description">Informações Pessoais</p>
+						<div class="row">
+							<div class="col-md-4">
+							  <div class="form-group row">
+								<label class="col-sm-6 col-form-label">Código de Produto:</label>
+								<div class="col-sm-6">
+								  <input type="text" class="form-control" />
+								</div>
+							  </div>
+							</div>
+							<div class="col-md-4">
+							  <div class="form-group row">
+								<label class="col-sm-6 col-form-label">Nome do Funcionário:</label>
+								<div class="col-sm-6">
+								  <input type="text" class="form-control" />
+								</div>
+							  </div>
+							</div>
+							<div class="col-sm-4">
+								<div class="form-group row justify-content-center">							
+									<button class="btn btn-secondary submit-btn btn-block col-sm-6"><span class="col-sm-6 col-form-label">Pesquisar</span> <span class="col-sm-6 col-form-label"><i class="fa fa-search" aria-hidden="true"></i></span></button>
+								</div>
+							</div>
+						</div>
+																		
+					   <div class="row">
+					   <div class="col-md-12">
+                          <div class="form-group row">
+                            <label class="col-sm-2 col-form-label">Fabricante:</label>
+                            <div class="col-sm-10">
+                              <input type="text" class="form-control" />
+                            </div>
+                          </div>
+                        </div>
+					   </div>
+					   
+					   <div class="row">
+                        
+                        <div class="col-md-4">
+                          <div class="form-group row">
+                            <label class="col-sm-9 col-form-label">Origem da mercadoria:</label>
+                            <div class="col-sm-3">
+                              <input type="text" class="form-control" />
+                            </div>
+                          </div>
+                        </div>
+						<div class="col-md-4">
+                          <div class="form-group row">
+                            <label class="col-sm-7 col-form-label">Preço de venda:</label>
+                            <div class="col-sm-5">
+                              <input type="text" class="form-control" />
+                            </div>
+                          </div>
+                        </div>
+						<div class="col-md-4">
+                          <div class="form-group row">
+                            <label class="col-sm-7 col-form-label">Base de calculo:</label>
+                            <div class="col-sm-5">
+                              <input type="text" class="form-control" />
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+					  
+					  <div class="row">
+                        <div class="col-md-6">
+                          <div class="form-group row">
+                            <label class="col-sm-4 col-form-label">Codigo:</label>
+                            <div class="col-sm-8">
+                              <input type="text" class="form-control" />
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-md-6">
+                          <div class="form-group row">
+                            <label class="col-sm-4 col-form-label">Codigo de barra:</label>
+                            <div class="col-sm-8">
+                              <input type="text" class="form-control" />
+                            </div>
+                          </div>
+                        </div>
+						
+					 </div>
+		
+					<div class="row">
+					<!--
+                        <div class="col-md-4">
+                          	<div class="card col-md-12 shadow-sm form-group ">
+						  <div class="card-header">
+							<h4 class="my-0 font-weight-normal text-center">Imagem do Produto</h4>
+						  </div>
+						  <div class="card-body">
+							<img class="img-thumbnail" src="assets/images/faces/face8.jpg" alt="profile image">
+						  </div>
+						    <div class="form-group">	
+								<button type="button" class="btn btn-lg btn-block btn-outline-primary">Enviar imagem</button>
+							</div>
+						</div>
+                        </div>
+						-->
+						 <div class="col-md-3">
+                          <div class="form-group row">
+                            <label class="col-sm-12 col-form-label">Imagem do produo:</label>
+                            <div class="col-sm-9 text-center">
+                          
+							<input type="file" id="files" name="image" accept="image/*" capture="capture" style='display:none;'>
+							<img class="form-group img-thumbnail" id="ImgEnviada" src="assets/images/product_images/apple-watch.jpg" alt="profile image">
+							 <div class="form-group">	
+								<button type="button" id="EnviarImagem" class="btn  btn-block btn-outline-primary" >Enviar imagem</button>
+						
+						  </div>
+						   
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-md-9">
+                          <div class="form-group">
+                            <label class="col-sm-4 col-form-label">Descição:</label>
+                            <div class="col-sm-12">
+                              <textarea type="text" class="form-control rounded-0" rows="10"></textarea>
+                            </div>
+                          </div>
+                        </div>
+					 </div>					
+						
+					  <div class="row">
+                        <div class="col-md-3">
+                          <div class="form-group row">
+                            <label class="col-sm-6 col-form-label">CFOP:</label>
+                            <div class="col-sm-6">
+                              <input type="text" class="form-control" />
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-md-3">
+                          <div class="form-group row">
+                            <label class="col-sm-6 col-form-label">NCM:</label>
+                            <div class="col-sm-6">
+                              <input type="text" class="form-control" />
+                            </div>
+                          </div>
+                        </div>
+						<div class="col-md-3">
+                          <div class="form-group row">
+                            <label class="col-sm-6 col-form-label">CST:</label>
+                            <div class="col-sm-6">
+                              <input type="text" class="form-control" />
+                            </div>
+                          </div>
+                        </div>
+						<div class="col-md-3">
+                          <div class="form-group row">
+                            <label class="col-sm-6 col-form-label">Unidade:</label>
+                            <div class="col-sm-6">
+                              <input type="text" class="form-control" />
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+					  
+					  <div class="row">
+							<div class="col-md-3">
+							  <div class="form-group row">
+								<label class="col-sm-6 col-form-label">EAN:</label>
+								<div class="col-sm-6">
+								  <input type="text" class="form-control" />
+								</div>
+							  </div>
+							</div>
+							
+						  <div class="col-md-3">
+							  <div class="form-group row">
+								<label class="col-sm-6 col-form-label">Categoria:</label>
+								<div class="col-sm-6">
+								  <input type="text" class="form-control" />
+								</div>
+							  </div>
+							</div>
+							
+							<div class="col-md-3">
+							  <div class="form-group row">
+								<label class="col-sm-6 col-form-label">Cor:</label>
+								<div class="col-sm-6">
+								  <input type="text" class="form-control" />
+								</div>
+							  </div>
+							</div>
+							<div class="col-md-3">
+							  <div class="form-group row">
+								<label class="col-sm-6 col-form-label">Quantidade:</label>
+								<div class="col-sm-6">
+								  <input type="text" class="form-control" />
+								</div>
+							  </div>
+							</div>
+						</div>
+						
+						<div class="row">
+							<div class="col-md-3">
+							  <div class="form-group row">
+								<label class="col-sm-6 col-form-label">Promoção:</label>
+								<div class="col-sm-6">
+								  <div class="form-check form-check-flat">
+								  <label class="form-check-label">
+									<input type="checkbox" class="form-check-input"></label>
+								</div>
+								</div>
+							  </div>
+							</div>
+							<div class="col-md-3">
+							  <div class="form-group row">
+								<label class="col-sm-6 col-form-label">Início:</label>
+								<div class="col-sm-6">
+								  <input type="text" class="form-control" />
+								</div>
+							  </div>
+							</div>
+							<div class="col-md-3">
+							  <div class="form-group row">
+								<label class="col-sm-6 col-form-label">Termino:</label>
+								<div class="col-sm-6">
+								  <input type="text" class="form-control" />
+								</div>
+							  </div>
+							</div>
+							<div class="col-md-3">
+							  <div class="form-group row">
+								<label class="col-sm-6 col-form-label">Valor:</label>
+								<div class="col-sm-6">
+								  <input type="text" class="form-control" />
+								</div>
+							  </div>
+							</div>
+					    </div>
+						
+						<div class="row">
+						  <div class="col-md-3">
+							  <div class="form-group row">
+								<label class="col-sm-7 col-form-label">Aliquota pis:</label>
+								<div class="col-sm-5">
+								  <input type="text" class="form-control" />
+								</div>
+							  </div>
+							</div>
+							<div class="col-md-3">
+							  <div class="form-group row">
+								<label class="col-sm-7 col-form-label">Aliquota cofins:</label>
+								<div class="col-sm-5">
+								  <input type="text" class="form-control" />
+								</div>
+							  </div>
+							</div>
+							<div class="col-md-3">
+							  <div class="form-group row">
+								<label class="col-sm-7 col-form-label">Aliquota icms:</label>
+								<div class="col-sm-5">
+								  <input type="text" class="form-control" />
+								</div>
+							  </div>
+							</div>
+							<div class="col-md-3">
+							  <div class="form-group row">
+								<label class="col-sm-7 col-form-label">Aliquota ipi:</label>
+								<div class="col-sm-5">
+								  <input type="text" class="form-control" />
+								</div>
+							  </div>
+							</div>
+					    </div>
+						
+						<div class="row">
+						  <div class="col-md-4">
+							  <div class="form-group row">
+								<label class="col-sm-7 col-form-label">Aliquota IBPT Nacional:</label>
+								<div class="col-sm-5">
+								  <input type="text" class="form-control" />
+								</div>
+							  </div>
+							</div>
+							<div class="col-md-4">
+							  <div class="form-group row">
+								<label class="col-sm-7 col-form-label">Aliquota IBPT Importação:</label>
+								<div class="col-sm-5">
+								  <input type="text" class="form-control" />
+								</div>
+							  </div>
+							</div>
+							<div class="col-md-4">
+							  <div class="form-group row">
+								<label class="col-sm-7 col-form-label">Aliquota IBPT Estadual:</label>
+								<div class="col-sm-5">
+								  <input type="text" class="form-control" />
+								</div>
+							  </div>
+							</div>
+						</div>
+					</form>	
+					  
+						<div class="row">
+							<div class="col-md-3">
+								<div class="form-group">
+									<button class="btn btn-success submit-btn btn-block">Novo</button>
+								</div>	
+							</div>	
+							<div class="col-md-3">
+								<div class="form-group">
+									<button class="btn btn-warning submit-btn btn-block">Editar</button>
+								</div>
+							</div>								
+							<div class="col-md-3">
+								<div class="form-group">
+									<button class="btn btn-danger submit-btn btn-block">Excluir</button>
+								</div>
+							</div>								
+							<div class="col-md-3">
+								<div class="form-group">	
+									<button class="btn btn-secondary submit-btn btn-block">Cancelar</button>
+								</div>
+							</div>								
+						</div>	
+					</div>
+				
+			  </div>
+			</div>
+<!-- ---------------------------------------------------------------------------------------------------RenderHtml.Footer----------------------------------------------------------------------------------------------------------------- -->
+{%RenderHtmlFooter%}					   
+ </body>
+</html>

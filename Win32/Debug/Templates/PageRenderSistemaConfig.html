@@ -1,0 +1,596 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<!-- ---------------------------------------------------------------------------------------------------RenderHtml.Head----------------------------------------------------------------------------------------------------------------- -->
+{%RenderHtmlHead%}
+
+</head>
+<body>
+{%RenderHtmlHeader%}
+<!-- ---------------------------------------------------------------------------------------------------body----------------------------------------------------------------------------------------------------------------- -->
+
+       <div class="col-12 grid-margin">
+                <div class="card">
+                  <div class="card-body">
+                    <h4 class="card-title ">Configuração do Sitema</h4>
+                    <form class="form-sample">
+					
+					 
+					 	<hr>
+				<p class="card-description">Informações para conexão a base de dados da empresa</p>				
+				       <div class="row">
+                        <div class="col-md-3">
+                          <div class="validar form-group row">
+                            <label class="col-sm-4 col-form-label">Host:</label>
+                            <div class="col-sm-8">
+							{%IWHost%} 
+                              <!-- <input type="text" class="form-control" /> -->
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-md-3">
+                          <div class="validar form-group row">
+                            <label class="col-sm-4 col-form-label">Port:</label>
+                            <div class="col-sm-8">
+							{%IWPort%} 
+                              <!-- <input type="text" class="form-control" /> -->
+                            </div>
+                          </div>
+                        </div>
+						<div class="col-md-3">
+                          <div class="validar form-group row">
+                            <label class="col-sm-4 col-form-label">Database:</label>
+                            <div class="col-sm-8">
+							{%IWDatabase%} 
+                              <!-- <input type="text" class="form-control" /> -->
+                            </div>
+                          </div>
+                        </div>
+						<div class="col-md-3">
+                          <div class="validar form-group row">
+                            <label class="col-sm-4 col-form-label">Protocolo:</label>
+                            <div class="col-sm-8">
+							{%IWProtocolo%} 
+                              <!-- <input type="text" class="form-control" /> -->
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+					  <div class="row">
+					  
+						<div class="col-md-3">
+							<div class="validar form-group row">
+								<label class="col-sm-4 col-form-label">Schema:</label>
+								<div class="col-sm-8">
+								{%IWSchema%} 
+								<!-- <input type="text" class="form-control" /> -->
+								</div>
+							</div>
+						</div>
+						<div class="col-md-3">
+								<div class="validar form-group row">
+								<label class="col-sm-4 col-form-label">Usuário:</label>
+								<div class="col-sm-8">
+								{%IWUsuario%} 
+								<!-- <input type="text" class="form-control" /> -->
+								</div>
+							</div>
+						</div>
+						<div class="col-md-3">
+							<div class="validar form-group row">
+								<label class="col-sm-4 col-form-label">Senha:</label>
+								<div class="col-sm-8">
+								{%IWSenha%} 
+								<!-- <input type="text" class="form-control" /> -->
+								</div>
+							</div>
+						</div>
+						<div class="col-md-3">
+						<div class="form-group">
+							
+								<button id="TestarConexao" class="btn btn-success submit-btn btn-block">Testar conexão</button>
+								<!-- <input type="text" class="form-control" /> -->
+								</div>
+							</div>
+						</div>
+				  
+			<hr>
+				 <p class="card-description">Informações da empresa</p>			
+				
+					 <div class="row flex justify-content-center">
+					   <div class="col-md-3">
+                          <div class="form-group row">
+                            <label class="col-sm-12 col-form-label text-center">Logo da Empresa:</label>
+                            <div class="col-sm-12">
+                             <div class="text-center">
+							   <input type="file" id="files" name="image" accept="image/*" capture="capture" style='display:none;'>
+							     {%ImgEmpresa%} 
+							   <div class="form-group">
+							       <button type="button" id="EnviarImagem" class="btn btn-lg btn-block btn-outline-primary">Enviar imagem</button>
+							  </div>
+					         </div>
+						   </div>
+                          </div>
+                        </div>
+			         </div>
+	                 <div class="row">
+                        <div class="col-md-12">
+                          <div class="validar form-group row">
+                            <label class="col-sm-2 col-form-label">Razão Social:</label>
+                            <div class="col-sm-10">
+							{%IWRazaoSocial%}
+                              <!-- <input type="text" class="form-control" /> -->
+                            </div>
+                          </div>
+                        </div>
+						</div>
+						<div class="row">
+                        <div class="col-md-12">
+                          <div class="validar form-group row">
+                            <label class="col-sm-2 col-form-label">Nome fantasia:</label>
+                            <div class="col-sm-10">
+							{%IWNomeFantasia%}
+                              <!-- <input type="text" class="form-control" /> -->
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+					  <div class="row">
+                        <div class="col-md-3">
+                          <div class="validar form-group row">
+                            <label class="col-sm-3 col-form-label">Cnpj:</label>
+                            <div class="col-sm-9">
+							{%IWCnpj%}
+                              <!-- <input type="text" class="form-control" /> -->
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-md-3">
+                          <div class="validar form-group row">
+                            <label class="col-sm-3 col-form-label">IE:</label>
+                            <div class="col-sm-9">
+							{%IWIE%}
+                              <!-- <input type="text" class="form-control" /> -->
+                            </div>
+                          </div>
+                        </div>
+						 <div class="col-md-3">
+                          <div class="validar form-group row">
+                            <label class="col-sm-3 col-form-label">CNAE:</label>
+                            <div class="col-sm-9">
+							{%IWCNAE%}
+                              <!-- <input type="text" class="form-control" /> -->
+                            </div>
+                          </div>
+                        </div>
+						<div class="col-md-3">
+                          <div class="validar form-group row">
+                            <label class="col-sm-3 col-form-label">IM:</label>
+                            <div class="col-sm-9">
+							{%IWIM%}
+                              <!-- <input type="text" class="form-control" /> -->
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+					  <div class="row">
+                        <div class="col-md-8">
+                          <div class="validar form-group row">
+                            <label class="col-sm-3 col-form-label">Endereço:</label>
+                            <div class="col-sm-9">
+							{%IWEndereco%}
+                              <!-- <input type="text" class="form-control" /> -->
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-md-4">
+                          <div class="validar form-group row">
+                            <label class="col-sm-3 col-form-label">Número:</label>
+                            <div class="col-sm-9">
+							{%IWNumero%}
+                              <!-- <input type="text" class="form-control" /> -->
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+					  <div class="row">
+                        <div class="col-md-7">
+                          <div class="validar form-group row">
+                            <label class="col-sm-3 col-form-label">Complemento:</label>
+                            <div class="col-sm-9">
+							{%IWComplemento%}
+                              <!-- <input type="text" class="form-control" /> -->
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-md-5">
+                          <div class="validar form-group row">
+                            <label class="col-sm-3 col-form-label">Bairro:</label>
+                            <div class="col-sm-9">
+							{%IWBairro%}
+                              <!-- <input type="text" class="form-control" /> -->
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+					  <div class="row">
+                        <div class="col-md-3">
+                          <div class="validar form-group row">
+                            <label class="col-sm-5 col-form-label">Codigo do Municipio:</label>
+                            <div class="col-sm-7">
+							{%IWCodigoMunicipal%}
+                              <!-- <input type="text" class="form-control" /> -->
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-md-6">
+                          <div class="validar form-group row">
+                            <label class="col-sm-4 col-form-label">Município:</label>
+                            <div class="col-sm-8">
+							{%IWMunicipio%}
+                              <!-- <input type="text" class="form-control" /> -->
+                            </div>
+                          </div>
+                        </div>
+						 <div class="col-md-3">
+                          <div class="validar form-group row">
+                            <label class="col-sm-6 col-form-label">UF:</label>
+                            <div class="col-sm-6">
+                              {%ComboxUF%}
+							  <!--
+							  <select id= "campoUF" class="form-control">
+                                <option value="SP">SP</option>
+                                <option value="RO">RO</option>
+                                <option value="RJ">RJ</option>
+                                <option value="BD">BH</option>
+                              </select>
+							  -->
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+					  <div class="row">
+                        <div class="col-md-3">
+                          <div class="validar form-group row">
+                            <label class="col-sm-4 col-form-label">Cep:</label>
+                            <div class="col-sm-8">
+							{%IWCep%}
+                              <!-- <input type="text" class="form-control" /> -->
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-md-3">
+                          <div class="validar form-group row">
+                            <label class="col-sm-5 col-form-label">Telefone:</label>
+                            <div class="col-sm-7">
+							{%IWTelefone%}
+                              <!-- <input type="text" class="form-control" /> -->
+                            </div>
+                          </div>
+                        </div>
+						<div class="col-md-3">
+                          <div class="validar form-group row">
+                            <label class="col-sm-5 col-form-label">Celular:</label>
+                            <div class="col-sm-7">
+							{%IWCelular%}
+                              <!-- <input type="text" class="form-control" /> -->
+                            </div>
+                          </div>
+                        </div>
+						<div class="col-md-3">
+                          <div class="validar form-group row">
+                            <label class="col-sm-5 col-form-label">Fax:</label>
+                            <div class="col-sm-7">
+							{%IWFax%}
+                              <!-- <input type="text" class="form-control" /> -->
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+					  <div class="row">
+                        <div class="col-md-6">
+                          <div class="validar form-group row">
+                            <label class="col-sm-3 col-form-label">E-mail:</label>
+                            <div class="col-sm-9">
+							{%IWEmail%}
+                              <!-- <input type="text" class="form-control" /> -->
+                            </div>
+                          </div>
+                        </div>
+						<div class="col-md-6">
+                          <div class="validar form-group row">
+                            <label class="col-sm-3 col-form-label">Site:</label>
+                            <div class="col-sm-9">
+							{%IWSite%}
+                              <!-- <input type="text" class="form-control" /> -->
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+				   <div class="row">
+                        <div class="col-md-4">
+                          <div class="validar form-group row">
+                            <label class="col-sm-6 col-form-label">Chave IBPT:</label>
+                            <div class="col-sm-6">
+							{%IWChaveIBPT%}
+                              <!-- <input type="text" class="form-control" /> -->
+                            </div>
+                          </div>
+                        </div>
+						<div class="col-md-4">
+                          <div class="validar form-group row">
+                            <label class="col-sm-6 col-form-label">Vigência IBPT:</label>
+                            <div class="col-sm-6">
+							{%IWVigenciaIBPT%}
+                              <!-- <input type="text" class="form-control" /> -->
+                            </div>
+                          </div>
+                        </div>
+						<div class="col-md-4">
+                          <div class="validar form-group row">
+                            <label class="col-sm-6 col-form-label">Versão do arquivo IBPT:</label>
+                            <div class="col-sm-6">
+							{%IWVersaoarquivoIBPT%}
+                              <!-- <input type="text" class="form-control" /> -->
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+					  <div class="row">
+						  <div class="col-md-4">
+							  <div class="validar form-group row">
+								<label class="col-sm-6 col-form-label">Alíquota IBPT nacional:</label>
+								<div class="col-sm-6">
+								{%IWAliquotaIBPTNacional%}
+								  <!-- <input type="text" class="form-control" /> -->
+								</div>
+							  </div>
+							</div>
+							<div class="col-md-4">
+							  <div class="validar form-group row">
+								<label class="col-sm-6 col-form-label">Alíquota IBPT importação:</label>
+								<div class="col-sm-6">
+								{%IWAliquotaIBPTImportacao%}
+								  <!-- <input type="text" class="form-control" /> -->
+								</div>
+							  </div>
+							</div>
+							<div class="col-md-4">
+							  <div class="validar form-group row">
+								<label class="col-sm-6 col-form-label">Alíquota IBPT estadual:</label>
+								<div class="col-sm-6">
+								{%IWAliquotaIBPTEstadual%}
+								  <!-- <input type="text" class="form-control" /> -->
+								</div>
+							  </div>
+							</div>
+						</div>
+					  <div class="row">
+                        <div class="col-md-4">
+                          <div class="validar form-group row">
+                            <label class="col-sm-6 col-form-label">Alíquota ICMS:</label>
+                            <div class="col-sm-6">
+							{%IWAliquotaICMS%}
+                              <!-- <input type="text" class="form-control" /> -->
+                            </div>
+                          </div>
+                        </div>
+						<div class="col-md-4">
+                          <div class="validar form-group row">
+                            <label class="col-sm-6 col-form-label">Alíquota ICMS ST:</label>
+                            <div class="col-sm-6">
+							{%IWAliquotaICMSST%}
+                              <!-- <input type="text" class="form-control" /> -->
+                            </div>
+                          </div>
+                        </div>
+						<div class="col-md-4">
+                          <div class="validar form-group row">
+                            <label class="col-sm-6 col-form-label">Alíquota IPI:</label>
+                            <div class="col-sm-6">
+							{%IWAliquotaIPI%} 
+                              <!-- <input type="text" class="form-control" /> -->
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-md-4">
+                          <div class="validar form-group row">
+                            <label class="col-sm-6 col-form-label">Alíquota Pis:</label>
+                            <div class="col-sm-6">
+							{%IWAliquotaPis%} 
+                              <!-- <input type="text" class="form-control" /> -->
+                            </div>
+                          </div>
+                        </div>
+						<div class="col-md-4">
+                          <div class="validar form-group row">
+                            <label class="col-sm-6 col-form-label">Alíquota Cofins:</label>
+                            <div class="col-sm-6">
+							{%IWAliquotaCofins%} 
+                              <!-- <input type="text" class="form-control" /> -->
+                            </div>
+                           </div>
+                         </div>
+						</div>
+					   <div class="row">
+							<div class="col-md-4">
+							  <div class="form-group row">
+								<label class="col-sm-6 col-form-label">Simples Nacional:</label>
+	                              <div class="col-sm-6">
+								   <div class="form-check form-check-flat">
+								    <label class="form-check-label">
+										<input id="Simples-Nacional" type="checkbox" class="form-check-input">
+									</label>
+								   </div>
+								 </div>
+							  </div>
+							</div>
+							<div class="col-md-4">
+							  <div class="form-group row">
+								<label class="col-sm-6 col-form-label">Isento:</label>
+								 <div class="col-sm-6">
+								  <div class="form-check form-check-flat">
+								   <label class="form-check-label">
+									    <input id="Isento" type="checkbox" class="form-check-input">
+									</label>
+								 </div>
+								</div>
+							  </div>
+							</div>
+						</div>
+				
+					   {%IWBase64%}
+					   <div class="row">
+					   		<div class="col-md-2">
+								<div class="form-group">
+								
+									<button id="Confirmar" class="btn btn-success submit-btn btn-block">Salvar</button>
+								</div>	
+							</div>	
+							<div class="col-md-2">
+								<div class="form-group">
+									<button id="Editar"class="btn btn-warning submit-btn btn-block">Editar</button>
+								</div>
+							</div>								
+												
+						</div>
+						
+						
+				</form>
+				</div>
+			</div>
+		</div>
+		
+								
+			  
+	 <!-- container dos componentes cuja sua geracao pelo delphi gera sem controle de html para edicao -->
+	 <!-- os clicks aqui sao feitos via javascript que pega os valores e clicks dos seus html sua tags de referencias -->
+	 <!-- e joga neles para todo o processo ser feito pelo Delphi -->
+	<div class="controles-delphi"> 
+	 <!-- chekcbox Simples Nacional    --> {%IWChkSimplesNacional%}   
+	 <!-- chekcbox checkbox Isento     --> {%IWChkIsento%}
+	 <!-- Botao Enviar Imagem          --> {%IWBtnEnviarImagem%}		
+	 <!-- Botao Confirmar              --> {%IWBTNCONFIRMAR%}
+     <!-- Botao Editar                 --> {%IWBtnEditar%}	
+     <!-- Edit UF                      --> {%IWUF%}	
+	 <!-- Edit que leva o retono do javascript para passar para o delphi-->
+	 <!-- Botao Testar Conexao         -->{%IWBtnTestarConexao%}	
+	 <!-- Botao Salvar UserMaster      -->{%IWBtnSalvarUserMaster%}	
+	 <!-- Edit ID                      -->{%IWId%}
+	</div> 
+
+<!-- ---------------------------------------------------------------------------------------------------RenderHtml.Footer----------------------------------------------------------------------------------------------------------------- -->
+{%RenderHtmlFooter%}
+<!-- ---------------------------------------------------------------------------------------------------RenderHtml.Footer----------------------------------------------------------------------------------------------------------------- -->
+<script src="assets/js/jpdvweb_Mascara_Campos.js"></script>
+<script>
+  $('.date').datepicker({
+  todayBtn: true,
+    clearBtn: true,
+	    days: ["Domingo", "Segunda", "Terça", "Quarta", "Quinta", "Sexta", "Sabado"],
+    daysShort: ["Dom", "Seg", "Ter", "Qua", "Qui", "Sex", "Sab"],
+    daysMin: ["Dom", "Seg", "Ter", "Qua", "Qui", "Sex", "Sab"],
+  language: "pt-BR",
+  autoclose: true,
+   weekStart: 0
+ 
+});
+</script>   
+<script>
+//a classe css glyphicon ativa para a chamada do glyphicon- icone desejado e preciso usar os dois
+
+
+	
+	$( ".validar" ).on( "mouseleave", function() {
+		
+		var class_ok            = 'has-feedback has-success';
+		var class_ok_iframe     = '<i class="form-control-feedback bv-icon- glyphicon glyphicon-ok"></i>';
+
+		var class_error         = 'has-feedback has-error'; 
+		var class_error_iframe	= '<i class="form-control-feedback bv-icon- glyphicon glyphicon-remove"></i>';
+     	var class_error_msg     = '<small class="help-block col-md-12">Este campo não pode estar vazio.</small>';
+
+		
+		$input = null;
+		
+		if($(this).find("input").val() != ''){
+			 $input    = $(this).find("input").val(); 
+		}
+		if (($(this).find("option:selected").text() != '')) {
+			if (($(this).find("option:selected").text() != 'Selecionar')) {
+			 $input    = $(this).find("option:selected").text(); 
+			}
+		}
+		
+		if ($input == null ){
+		  $(this).removeClass( class_ok ).addClass( class_error );
+		  $(this).find("i").remove();
+		  $(this).find("div").append(class_error_iframe);
+		  $(this).find("small").remove();
+          $(this).append(class_error_msg);
+		  $( "button" ).prop( "disabled", true );
+		}else{
+		  $(this).removeClass( class_error ).addClass( class_ok );
+		  $(this).find("i").remove();
+		  $(this).find("div").append(class_ok_iframe);
+		  $(this).find("small").remove();
+		  $( "button" ).prop( "disabled", false );
+       
+		}
+		
+		//  console.log($input);
+ 
+	});
+	
+		$( "input" ).on( "change", function() {
+		
+			$( ".validar" ).on( "mouseleave", function() {
+
+			var class_ok            = 'has-feedback has-success';
+			var class_ok_iframe     = '<i class="form-control-feedback bv-icon- glyphicon glyphicon-ok"></i>';
+
+			var class_error         = 'has-feedback has-error'; 
+			var class_error_iframe	= '<i class="form-control-feedback bv-icon- glyphicon glyphicon-remove"></i>';
+			var class_error_msg     = '<small class="help-block col-md-12">Este campo não pode estar vazio.</small>';
+
+
+			$input = null;
+
+			if($(this).find("input").val() != ''){
+				 $input    = $(this).find("input").val(); 
+			}
+			if (($(this).find("option:selected").text() != '')) {
+				if (($(this).find("option:selected").text() != 'Selecionar')) {
+				 $input    = $(this).find("option:selected").text(); 
+				}
+			}
+
+			if ($input == null ){
+			  $(this).removeClass( class_ok ).addClass( class_error );
+			  $(this).find("i").remove();
+			  $(this).find("div").append(class_error_iframe);
+			  $(this).find("small").remove();
+			  $(this).append(class_error_msg);
+			  $( "button" ).prop( "disabled", true );
+			}else{
+			  $(this).removeClass( class_error ).addClass( class_ok );
+			  $(this).find("i").remove();
+			  $(this).find("div").append(class_ok_iframe);
+			  $(this).find("small").remove();
+			  // Disable #x
+              $( "button" ).prop( "disabled", false );
+
+			}
+
+			//  console.log($input);
+
+		});
+ 
+	});
+	
+</script>	
+
+ </body>
+</html>
